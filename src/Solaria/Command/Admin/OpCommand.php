@@ -26,7 +26,7 @@ class OpCommand extends Command {
             $player->setOp(true);
             $player->sendMessage(Utils::getPrefix() . "Vous avez été op par §b{$sender->getName()} §7!");
             $sender->sendMessage(Utils::getPrefix() . "Vous avez bien op §b{$player->getName()}§7.");
-            Utils::sendWebHook("・**{$sender->getName()}** a op **{$player->getName()}**", "**OP**", "https://discord.com/api/webhooks/926018950683328562/S5p1qSZnv23ezD1LR9bgOD2Chy_eDkY3y_ctG-kgpuDdTGzDE9E2TtTV8fkGqEkd2KuM");
+            Utils::sendWebHook("・**{$sender->getName()}** a op **{$player->getName()}**", "**OP**", "drop_your_webhook_link");
 
         }
 
