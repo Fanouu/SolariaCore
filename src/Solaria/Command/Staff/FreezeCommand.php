@@ -28,7 +28,7 @@ class FreezeCommand extends Command{
                     $f->save();
                     $p->setImmobile(false);
                     Core::getInstance()->getServer()->broadcastMessage(Utils::getPrefix() . "§b{$p->getName()} §7a été unfreeze par §b{$sender->getName()}");
-                    Utils::sendWebHook("**{$p->getName()}** à été unfreeze par **{$sender->getName()}", "**Freeze**", "https://discord.com/api/webhooks/926024060859744326/FDuN14oRZnIzaX0c2ffdaZ3NJLR_m8ngh9PkOY2qsX8ad8uCqhCIgvCAzfKOFfPsIEjF");
+                    Utils::sendWebHook("**{$p->getName()}** à été unfreeze par **{$sender->getName()}", "**Freeze**", "drop_your_webhook_link");
                 }else{
                     $f->set($p->getName(), true);
                     $f->save();
@@ -37,7 +37,7 @@ class FreezeCommand extends Command{
                     $p->addTitle("§aTu as étais freeze par un modérateur");
                     $p->addSubTitle("§6Viens vocal sur notre discord");
                     Core::getInstance()->getServer()->broadcastMessage(Utils::getPrefix() . "§b{$p->getName()} §7a été freeze par §b{$sender->getName()}");
-                    Utils::sendWebHook("**{$p->getName()}** à été freeze par **{$sender->getName()}**", "**Freeze**", "https://discord.com/api/webhooks/926024060859744326/FDuN14oRZnIzaX0c2ffdaZ3NJLR_m8ngh9PkOY2qsX8ad8uCqhCIgvCAzfKOFfPsIEjF");
+                    Utils::sendWebHook("**{$p->getName()}** à été freeze par **{$sender->getName()}**", "**Freeze**", "drop_your_webhook_link");
                 }
             }else{
                 $sender->sendMessage(Utils::getPrefix() . "Tu n'as pas la permissionde freeze un autre joueur");
