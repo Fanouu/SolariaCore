@@ -29,13 +29,13 @@ class MuteCommand extends Command{
             $duree = true;
             Core::getInstance()->getServer()->broadcastMessage(Utils::getPrefix() . "§b{$p->getName()} §7à été mute par §b{$sender->getName()} §7à vie");
             $mute->set($p->getName(), "vie");
-            Utils::sendWebHook("**{$p->getName()}** à été mute à **vie** par **{$sender->getName()}**", "**Mute à vie**", "https://discord.com/api/webhooks/926024060859744326/FDuN14oRZnIzaX0c2ffdaZ3NJLR_m8ngh9PkOY2qsX8ad8uCqhCIgvCAzfKOFfPsIEjF");
+            Utils::sendWebHook("**{$p->getName()}** à été mute à **vie** par **{$sender->getName()}**", "**Mute à vie**", "drop_your_webhook_link");
         } else {
             $duree = ($args[1] * 60);
             $ech = ($duree + time());
             Core::getInstance()->getServer()->broadcastMessage(Utils::getPrefix() . "§b{$p->getName()} §7à été mute par §b{$sender->getName()} §7pendant §b{$args[1]} §7minutes");
             $mute->set($p->getName(), $ech);
-            Utils::sendWebHook("**{$p->getName()}** à été mute par **{$sender->getName()}** pendant **{$args[1]} minutes**", "**Mute**", "https://discord.com/api/webhooks/926024060859744326/FDuN14oRZnIzaX0c2ffdaZ3NJLR_m8ngh9PkOY2qsX8ad8uCqhCIgvCAzfKOFfPsIEjF");
+            Utils::sendWebHook("**{$p->getName()}** à été mute par **{$sender->getName()}** pendant **{$args[1]} minutes**", "**Mute**", "drop_your_webhook_link");
         }
         $mute->save();
     }
