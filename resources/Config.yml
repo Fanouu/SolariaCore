@@ -1,0 +1,19 @@
+#Config Solaria KitMap
+
+Maintenance: true
+
+#Event coordonnées 
+# Configurer de cette manière: world:position_x:position_y:position_z
+#Exemple: koth:12:10:50
+CordKothPos1: "undefined"
+CordKothPos2: "undefined"
+
+CordTotemPos1: "undefined"
+CordTotemPos2: "undefined"
+
+#KOTH | Limite du temp pour capturé les koth en minute !
+LimiteKothForCapture: 15
+#KOTH | Delait d'apparition du Koth en heures !
+KothApparitionDelait: 3
+
+CustomTag: ["§9Solaria", "§1Fr§fan§cce"]
