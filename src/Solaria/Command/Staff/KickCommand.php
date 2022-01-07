@@ -43,7 +43,7 @@ class KickCommand extends Command {
 
             }
 
-            Utils::sendWebHook("・**{$player->getName()}** viens de se faire expulser du serveur par **{$sender->getName()}** pour **{$raison}**.", "**KICK**", "https://discord.com/api/webhooks/926024060859744326/FDuN14oRZnIzaX0c2ffdaZ3NJLR_m8ngh9PkOY2qsX8ad8uCqhCIgvCAzfKOFfPsIEjF");
+            Utils::sendWebHook("・**{$player->getName()}** viens de se faire expulser du serveur par **{$sender->getName()}** pour **{$raison}**.", "**KICK**", "drop_your_webhook_link");
             $player->kick("§7---------------[§bExpulsion§7]---------------\n§7- Staff: §b{$sender->getName()}\n§7- Raison: §b{$raison}\n§7- Discord: §bhttps://discord.gg/kxBnmFXAWA\n§7---------------------------------------", false);
 
         }else{
