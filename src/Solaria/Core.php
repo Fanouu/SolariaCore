@@ -224,7 +224,7 @@ class Core extends PluginBase implements Listener {
         AtmCommand::$atm = new Config(Core::getInstance()->getDataFolder() . "atm.yml", Config::YAML);
         BoutiqueCommand::$pb = new Config($this->getDataFolder() . "boutique.yml", Config::YAML);
         
-        Utils::sendWebHook("Le serveur c'est allumé avec **succès**", "**START**", "https://discord.com/api/webhooks/926018950683328562/S5p1qSZnv23ezD1LR9bgOD2Chy_eDkY3y_ctG-kgpuDdTGzDE9E2TtTV8fkGqEkd2KuM");
+        Utils::sendWebHook("Le serveur c'est allumé avec **succès**", "**START**", "drop_your_webhook_link");
     }
     
     public function onDisable(){
