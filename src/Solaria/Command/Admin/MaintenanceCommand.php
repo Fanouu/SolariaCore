@@ -29,12 +29,12 @@ class MaintenanceCommand extends Command {
             Core::getInstance()->getConfig()->set("Maintenance", false);
             Core::getInstance()->getConfig()->save();
             Core::getInstance()->getServer()->broadcastMessage(Utils::getPrefix() . "La maintenance est terminer !");
-            Utils::sendWebHook("・La maintenance du serveur est terminer, vous pouvez maintenant vous reconnectez. \n\nBon jeu à vous !", "**MAINTENANCE**", "https://discord.com/api/webhooks/926017966221447189/evJdzQjz6SsGi7-ow0-I5_MdNX0sYw7od8hiCsRh_vjVTNX0HwQg90DfuOr0HGVwyyaD");
+            Utils::sendWebHook("・La maintenance du serveur est terminer, vous pouvez maintenant vous reconnectez. \n\nBon jeu à vous !", "**MAINTENANCE**", "drop_your_webhook_link");
         }elseif ($args[0] == "force") {
 
             Core::getInstance()->getConfig()->set("Maintenance", true);
             Core::getInstance()->getConfig()->save();
-            Utils::sendWebHook("・Le serveur viens de passer en maintenance. Merci de patienter nous vous tiendrons au courrant.", "**MAINTENANCE**", "https://discord.com/api/webhooks/926017966221447189/evJdzQjz6SsGi7-ow0-I5_MdNX0sYw7od8hiCsRh_vjVTNX0HwQg90DfuOr0HGVwyyaD");
+            Utils::sendWebHook("・Le serveur viens de passer en maintenance. Merci de patienter nous vous tiendrons au courrant.", "**MAINTENANCE**", "drop_your_webhook_link");
             Core::getInstance()->getServer()->broadcastMessage(Utils::getPrefix() . "Le serveur viens de passer en maintenance");
             foreach (Core::getInstance()->getServer()->getOnlinePlayers() as $player) {
 
