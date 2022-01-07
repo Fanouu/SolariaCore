@@ -50,7 +50,7 @@ class KothTask extends Task{
 
         if($minutes == 0 and($this->plugin->getKothAPI()->get("koth_enable") == false)){
             $this->plugin->getKothAPI()->start();
-            Utils::sendWebHook("Un événement **KOTH** vient de démarrer, soyez le premier à capturer la zone !", "**Event KOTH**", "https://discord.com/api/webhooks/926021554020712471/5koyodiBfFZRU9mSNdpdsoQEToB1exmUumAyVJNF7pPY4e8kDcu8td4zyIwflajI9iIZ");
+            Utils::sendWebHook("Un événement **KOTH** vient de démarrer, soyez le premier à capturer la zone !", "**Event KOTH**", "drop_your_webhook_link");
         }
         }
 
