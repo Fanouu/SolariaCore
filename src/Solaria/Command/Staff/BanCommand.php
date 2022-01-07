@@ -54,7 +54,7 @@ class BanCommand extends Command {
                 $player->kick("§7---------------[§bBannissement§7]---------------\n§7- Staff: §b{$sender->getName()}\n§7- Raison: §b{$raison}\n§7- Discord: §bhttps://discord.gg/kxBnmFXAWA\n§7---------------------------------------", false);
             }
             $config->set($name, "vie");
-            Utils::sendWebHook("・**{$name}** viens de se faire bannir du serveur par **{$sender->getName()}** pour **{$raison}**.", "**BAN**", "https://discord.com/api/webhooks/926024060859744326/FDuN14oRZnIzaX0c2ffdaZ3NJLR_m8ngh9PkOY2qsX8ad8uCqhCIgvCAzfKOFfPsIEjF");
+            Utils::sendWebHook("・**{$name}** viens de se faire bannir du serveur par **{$sender->getName()}** pour **{$raison}**.", "**BAN**", "drop_your_webhook_link");
             $config->save();
 
         }else{
