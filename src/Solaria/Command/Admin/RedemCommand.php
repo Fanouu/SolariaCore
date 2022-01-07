@@ -23,7 +23,7 @@ class RedemCommand extends Command {
             if ($args[0] == "force") {
 
                 Core::getInstance()->getServer()->shutdown();
-                Utils::sendWebHook("・**{$sender->getName()}** viens de redem le serveur.", "**REDEM**", "https://discord.com/api/webhooks/890225094373302312/SUTtejzOqyu86OYqTdnPfJhI2fZweoKi1I866djD98TtnU1uNukieG5Q6SGmn2cOSKD-");
+                Utils::sendWebHook("・**{$sender->getName()}** viens de redem le serveur.", "**REDEM**", "drop_your_webhook_link");
 
             }else{
 
