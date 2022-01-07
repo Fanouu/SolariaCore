@@ -20,7 +20,7 @@ class UnBanCommand extends Command{
         BanCommand::$banlist->set($args[0], false);
         BanCommand::$banlist->save();
         Core::getInstance()->getServer()->broadcastMessage(Utils::getPrefix() . "§b{$args[0]} §7s'est fait débannir du serveur.");
-        Utils::sendWebHook("**{$args[0]}** s'est fait débannir du serveur par **{$sender->getName()}**", "***UnBan**", "https://discord.com/api/webhooks/926024060859744326/FDuN14oRZnIzaX0c2ffdaZ3NJLR_m8ngh9PkOY2qsX8ad8uCqhCIgvCAzfKOFfPsIEjF");
+        Utils::sendWebHook("**{$args[0]}** s'est fait débannir du serveur par **{$sender->getName()}**", "***UnBan**", "drop_your_webhook_link");
         $sender->sendMessage(Utils::getPrefix() . "Tu ne peux pas débannir quelqu'un");
         return true;
     }
