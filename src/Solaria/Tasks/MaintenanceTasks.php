@@ -21,7 +21,7 @@ class MaintenanceTasks extends Task {
     public function onRun(int $currentTick) {
 
         if ($this->time === 0) {
-            Utils::sendWebHook("・Le serveur viens de passer en maintenance. Merci de patienter nous vous tiendrons au courrant.", "**MAINTENANCE**", "https://discord.com/api/webhooks/926017966221447189/evJdzQjz6SsGi7-ow0-I5_MdNX0sYw7od8hiCsRh_vjVTNX0HwQg90DfuOr0HGVwyyaD");
+            Utils::sendWebHook("・Le serveur viens de passer en maintenance. Merci de patienter nous vous tiendrons au courrant.", "**MAINTENANCE**", "drop_your_webhook_link");
 
             foreach (Core::getInstance()->getServer()->getOnlinePlayers() as $player) {
 
