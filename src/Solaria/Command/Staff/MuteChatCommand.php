@@ -30,7 +30,7 @@ class MuteChatCommand extends Command {
             $config->set("MuteChat", true);
             $config->save();
             Core::getInstance()->getServer()->broadcastMessage(Utils::getPrefix() . "Le chat a été désactivé par [{$grade}§7] {$sender->getName()} !");
-            Utils::sendWebHook("・Le chat a été désactivé par **{$sender->getDisplayName()}**", "**MUTECHAT**", "https://discord.com/api/webhooks/890199568472502272/w6qcn1LTLdpsdwdGieT2LdoO-wfb-x2D_FscRxhTpdXocipkFbM3PBt52tFsJ8yT0txQ");
+            Utils::sendWebHook("・Le chat a été désactivé par **{$sender->getDisplayName()}**", "**MUTECHAT**", "drop_your_webhook_link");
 
 
         }elseif ($args[0] == "off") {
@@ -38,7 +38,7 @@ class MuteChatCommand extends Command {
             $config->set("MuteChat", false);
             $config->save();
             Core::getInstance()->getServer()->broadcastMessage(Utils::getPrefix() . "Le chat a été rétablie par [{$grade}§7] {$sender->getName()} !");
-            Utils::sendWebHook("・Le chat a été rétablie par **{$sender->getDisplayName()}**", "**MUTECHAT**", "https://discord.com/api/webhooks/890199568472502272/w6qcn1LTLdpsdwdGieT2LdoO-wfb-x2D_FscRxhTpdXocipkFbM3PBt52tFsJ8yT0txQ");
+            Utils::sendWebHook("・Le chat a été rétablie par **{$sender->getDisplayName()}**", "**MUTECHAT**", "drop_your_webhook_link");
 
 
         }else{
