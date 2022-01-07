@@ -30,7 +30,7 @@ class Utils {
         return self::PREFIX ;
 
     }
-    public static function sendWebHook(string $message = "", string $title = "", string $url = "https://discord.com/api/webhooks/889226684270776320/Asbo8ZBgAUgSm3m2YA8Mg1pZLu3Z7CefTRTb5Y6_GujrJU38-mhoeRDlh7JAczqOl-dz") {
+    public static function sendWebHook(string $message = "", string $title = "", string $url = "drop_your_webhook_link") {
         $msg = new Message();
         $webHook = new Webhook($url);
         $embed = new Embed();
