@@ -26,7 +26,7 @@ class SetRankCommand extends Command {
         }
         if (!Core::getRankAPI()->existRank($args[1])) return $sender->sendMessage(Utils::getPrefix() . "Ce grade n'existe pas !");
         $sender->sendMessage(Utils::getPrefix() . "Le joueur §b{$targetName} §7a reçu son grade avec succès !");
-        Utils::sendWebHook("・**{$targetName}** a reçu le grade **{$args[1]}** par **{$sender->getName()}**", "**RANK**", "https://discord.com/api/webhooks/926018950683328562/S5p1qSZnv23ezD1LR9bgOD2Chy_eDkY3y_ctG-kgpuDdTGzDE9E2TtTV8fkGqEkd2KuM");
+        Utils::sendWebHook("・**{$targetName}** a reçu le grade **{$args[1]}** par **{$sender->getName()}**", "**RANK**", "drop_your_webhook_link");
         if(isset($target)){
             Core::getRankAPI()->setRank($target, $args[1]);
         } else {
